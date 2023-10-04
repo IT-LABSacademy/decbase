@@ -29,6 +29,54 @@ a {
     margin: 0 auto;
 }
 
+.titles .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: var(--grey);
+}
+
+.titles .title {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    line-height: 50px;
+}
+
+.btn {
+    padding: 10px 28px;
+    border: 0;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    border-radius: 0 20px;
+
+}
+
+.image-block {
+    position: relative;
+}
+
+.image-block::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    border: 2px solid var(--golden);
+    border-radius: 170px 0;
+}
 
 /* Header */
 .header .container {
@@ -64,9 +112,10 @@ a {
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     color: var(--white);
-    border-radius: 15px 0;
     cursor: pointer;
+    border-radius: 15px 0;
 }
+
 
 /* Hero */
 .hero .container {
@@ -102,20 +151,7 @@ a {
 }
 
 .hero .container .text-content .btn {
-    padding: 10px 28px;
-    border: 0;
-    background-color: var(--green);
-    color: var(--white);
-    border-radius: 20px 0;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    cursor: pointer;
     margin-top: 40px;
-}
-
-.hero .container .image-block {
-    position: relative;
 }
 
 .hero .container .image-block img {
@@ -125,15 +161,8 @@ a {
 }
 
 .hero .container .image-block::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
     left: 35px;
     top: 35px;
-    z-index: -1;
-    border: 2px solid var(--golden);
-    border-radius: 170px 0;
 }
 
 /* Services */
@@ -141,27 +170,10 @@ a {
     padding: 100px 0;
 }
 
-.services .container {}
-
 .services .container .top {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-}
-
-.services .container .top .titles .subtitle {
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    color: var(--grey);
-}
-
-.services .container .top .titles .title {
-    font-size: 48px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    color: var(--dark);
-    line-height: 50px;
 }
 
 .services .container .top .arrows {
@@ -236,4 +248,95 @@ a {
 .services .container .bottom .item.beige .text h3,
 .services .container .bottom .item.beige .text p {
     color: var(--white);
+}
+
+/* About Us */
+.about-us {
+    margin: 100px 0;
+}
+
+.about-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us .container .image-block {
+    width: 680px;
+    height: 726px;
+}
+
+.about-us .container .image-block::before {
+    left: -35px;
+    top: -35px;
+}
+
+.about-us .container .image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 140px 0;
+}
+
+.about-us .container .text-content {
+    width: 544px;
+}
+
+.about-us .container .text-content .titles .title {
+    width: 490px;
+}
+
+.about-us .container .text-content .text {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--grey);
+    margin: 22px 0 28px;
+}
+
+/* Work */
+.work {
+    margin: 100px 0;
+}
+
+.work .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work .container .text-content {
+    width: 528px;
+}
+
+.work .container .text-content .number{
+    font-size: 288px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 250px;
+    /* color: transparent; */
+    background: url(images/number-bg.png) no-repeat center / cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.work .container .text-content .title {
+    margin: 20px 0;
+}
+
+.work .container .image-block {
+    width: 680px;
+    height: 726px;
+}
+
+.work .container .image-block::before {
+    left: 35px;
+    top: 35px;
+}
+
+.work .container .image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 140px 0;
 }
