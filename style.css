@@ -6,6 +6,7 @@
     --dark: #212121;
     --golden: #B0855B;
     --grey: #646464;
+    --bg-color: #f8f8f8;
 }
 
 * {
@@ -118,6 +119,23 @@ a {
 
 
 /* Hero */
+.hero {
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    width: 190px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    background-image: url(images/dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .hero .container {
     display: flex;
     align-items: center;
@@ -309,7 +327,7 @@ a {
     width: 528px;
 }
 
-.work .container .text-content .number{
+.work .container .text-content .number {
     font-size: 288px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -340,3 +358,59 @@ a {
     object-fit: cover;
     border-radius: 140px 0;
 }
+
+/* Stat */
+.stat {
+    background: var(--bg-color);
+    padding: 90px 0;
+}
+
+.stat .container .titles {
+    text-align: center;
+    width: 830px;
+    margin: 0 auto;
+}
+
+.stat .container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.stat .container .wrapper .number {
+    width: 182px;
+    height: 182px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px 0;
+}
+
+.stat .container .wrapper .number:nth-child(7),
+.stat .container .wrapper .number:nth-child(3) {
+    transform: translateY(50px);
+}
+
+.stat .container .wrapper .number p {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+}
+
+.stat .container .wrapper .number span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--grey);
+    text-transform: capitalize;
+}
+
+/* transform: translate(300px, -300px); */
+/* transform: translateX(-150px); */
+/* transform: rotate(45deg); */
+/* transform: scale(0.7); */
+/* transform: skew(-45deg, 25deg); */
