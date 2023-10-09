@@ -414,3 +414,101 @@ a {
 /* transform: rotate(45deg); */
 /* transform: scale(0.7); */
 /* transform: skew(-45deg, 25deg); */
+
+/* Client */
+.client {
+    padding: 100px 0;
+}
+
+.client .container {}
+
+.client .container .titles {
+    text-align: center;
+}
+
+.client .container .arrows {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+    margin: 20px 0 80px;
+}
+
+.client .container .arrows .arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background: var(--green);
+    color: var(--white);
+    box-shadow: -1px 3px 10px 0px #0000004D;
+}
+
+.client .container .arrows .arrow:first-child {
+    background: var(--white);
+    color: var(--grey);
+}
+
+.client .container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client .container .wrapper .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    width: 632px;
+}
+
+.client .container .wrapper .card .image {
+    width: 130px;
+    height: 130px;
+    border-radius: 35px 0;
+    overflow: hidden;
+    position: absolute;
+    left: -30px;
+}
+
+.client .container .wrapper .card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client .container .wrapper .card .content {
+    width: 571px;
+    box-shadow: 7px 7px 30px 5px #42605426;
+    padding: 40px 35px 40px 100px;
+    border-radius: 70px 0;
+}
+
+.client .container .wrapper .card .content .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .container .wrapper .card .content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+}
+
+.client .container .wrapper .card .content h2 span {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--grey);
+}
+
+.client .container .wrapper .card .content p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--grey);
+    margin-top: 10px;
+}
