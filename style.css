@@ -512,3 +512,118 @@ a {
     color: var(--grey);
     margin-top: 10px;
 }
+
+/* email */
+.email {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.email .container .line {
+    width: 461px;
+    height: 1px;
+    background-color: #C4c4c4;
+    margin: 40px auto;
+}
+
+.email .container .text {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: var(--grey);
+    width: 647px;
+    margin: 0 auto;
+}
+
+.email .container form {
+    width: 772px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px auto 0;
+    background-color: #EEEEEE;
+    border-radius: 20px 0;
+    overflow: hidden;
+}
+
+.email .container form input {
+    padding: 15px;
+    flex-grow: 1;
+    background: 0;
+    border: 0;
+    outline: 0;
+}
+
+.email .container form .btn {
+    border-radius: 0;
+}
+
+/* footer */
+.footer {
+    background: #f8f8f8;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0;
+}
+
+.footer .container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.footer .container ul li {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    color: var(--grey);
+    margin-bottom: 8px;
+}
+
+.footer .container .socials ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .container .socials ul li {
+    width: 37px;
+    height: 37px;
+    background-color: #d5d5d5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer .container .socials ul li:hover {
+    background: var(--green);
+}
+
+.footer .container .logo p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--grey);
+    width: 350px;
+    margin-top: 15px;
+}
+
+.footer .copy {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans',sans-serif;
+    color: var(--grey);
+    padding: 15px 0;
+}
+
+
+.footer .copy a {
+    color: var(--green);
+}
