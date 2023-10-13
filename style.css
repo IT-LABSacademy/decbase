@@ -409,18 +409,10 @@ a {
     text-transform: capitalize;
 }
 
-/* transform: translate(300px, -300px); */
-/* transform: translateX(-150px); */
-/* transform: rotate(45deg); */
-/* transform: scale(0.7); */
-/* transform: skew(-45deg, 25deg); */
-
 /* Client */
 .client {
     padding: 100px 0;
 }
-
-.client .container {}
 
 .client .container .titles {
     text-align: center;
@@ -512,6 +504,64 @@ a {
     color: var(--grey);
     margin-top: 10px;
 }
+
+/* Blog */
+.blog {
+    background: var(--bg-color);
+    padding: 90px 0;
+    text-align: center;
+}
+
+.blog .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 83px;
+}
+
+.blog .wrapper .card {
+    width: 608px;
+    text-align: left;
+}
+
+.blog .wrapper .card .image-block {
+    width: 555px;
+    height: 387px;
+}
+
+.blog .wrapper .card .image-block::before {
+    z-index: 1;
+    left: 16px;
+    top: 17px;
+    border-radius: 100px 0;
+}
+
+.blog .wrapper .card .image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 90px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.blog .wrapper .card .content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+    margin: 42px 0 17px;
+}
+
+.blog .wrapper .card .content p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+    color: var(--grey);
+    margin-bottom: 45px;
+}
+
+
 
 /* email */
 .email {
@@ -618,11 +668,10 @@ a {
 .footer .copy {
     text-align: center;
     font-size: 18px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--grey);
     padding: 15px 0;
 }
-
 
 .footer .copy a {
     color: var(--green);
